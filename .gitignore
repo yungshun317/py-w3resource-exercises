@@ -1,6 +1,7 @@
 datasets/
 *.h5
 *.npy
+*.npz
 MANIFEST
 build
 dist
