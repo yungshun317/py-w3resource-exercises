@@ -22,3 +22,13 @@ import sys
 print("This is the name/path of the script:", sys.argv[0])
 print("Number of arguments:", len(sys.argv))
 print("Argument list:", str(sys.argv))
+
+# Problem 107
+import os.path, time
+
+print("File:", __file__)
+print("Access time:", time.ctime(os.path.getatime(__file__)))
+print("Modified time:", time.ctime(os.path.getmtime(__file__)))
+print("Change time:", time.ctime(os.path.getctime(__file__)))
+print("Size:", os.path.getsize(__file__))
+        
